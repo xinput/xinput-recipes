@@ -44,6 +44,8 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
+				<key>Processor</key>
+    			<string>CodeSignatureVerifier</string>
 				<key>input_path</key>
 				<string>%pathname%/%NAME%.app</string>
 				<key>requirement</key>

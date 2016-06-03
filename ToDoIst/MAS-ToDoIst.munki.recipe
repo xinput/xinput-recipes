@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comment</key>
+	<string>Created with Recipe Robot v1.0.2 (https://github.com/homebysix/recipe-robot)</string>
+	<key>Description</key>
+	<string>Downloads the latest version of Todoist from the Mac App Store and imports it into Munki.</string>
+	<key>Identifier</key>
+	<string>io.github.xinput.munki.Todoist</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Todoist</string>
+		<key>PATH</key>
+		<string>/Applications/Todoist.app</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>the beautifully simple to-do list app built to help you do more and stress less. Whether you need to collaborate with your team, keep track of your most important projects, or just remember to pay the rent, Todoist is there to give you peace of mind.</string>
+			<key>developer</key>
+			<string>Ist Productivity Ltd.</string>
+			<key>display_name</key>
+			<string>Todoist</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>0.6.1</string>
+	<key>ParentRecipe</key>
+	<string>com.github.nmcspadden.munki.appstore</string>
+	<key>Process</key>
+	<array/>
+</dict>
+</plist>

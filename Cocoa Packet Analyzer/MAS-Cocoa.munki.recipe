@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comment</key>
+	<string>Created with Recipe Robot v1.0.2 (https://github.com/homebysix/recipe-robot)</string>
+	<key>Description</key>
+	<string>Downloads the latest version of Cocoa Packet ANalyzer from the Mac App Store and imports it into Munki.</string>
+	<key>Identifier</key>
+	<string>io.github.xinput.munki.CocoaPacketAnalyzer</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>CocoaPacketAnalyzer</string>
+		<key>PATH</key>
+		<string>/Applications/CocoaPacketAnalyzer.app</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Cocoa Packet Analyzer is a native Mac OS X implementation of a network protocol analyzer. 
+CPA supports the industry-standard PCAP packet capture format for reading and writing packet trace files. With CPA you are able to analyze, display and filter packet trace files. A QuickLook plugin is included to get an overview over packet traces already in finder. Furthermore you can print packet traces on a printer.</string>
+			<key>developer</key>
+			<string>Jens Francke</string>
+			<key>display_name</key>
+			<string>Cocoa Packet Analyzer</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>0.6.1</string>
+	<key>ParentRecipe</key>
+	<string>com.github.nmcspadden.munki.appstore</string>
+	<key>Process</key>
+	<array/>
+</dict>
+</plist>
